@@ -30,3 +30,6 @@ neighbors = NearestNeighbors(n_neighbors=6, algorithm='brute', metric='euclidean
 neighbors.fit(feature_list)
 
 distance, indices = neighbors.kneighbors([normalized_result])
+
+for file_img in indices[0]:
+    print(file_img)
