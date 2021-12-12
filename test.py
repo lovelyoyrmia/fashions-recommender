@@ -1,7 +1,6 @@
 import tensorflow
 import pickle
 import numpy as np
-from tqdm import tqdm
 from tensorflow.keras.applications.resnet50 import ResNet50, preprocess_input
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.layers import GlobalMaxPool2D
