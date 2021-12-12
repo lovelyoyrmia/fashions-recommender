@@ -8,8 +8,8 @@ from tensorflow.keras.layers import GlobalMaxPool2D
 from numpy.linalg import norm
 from sklearn.neighbors import NearestNeighbors
 
-filenames = np.array(pickle.load(open('filenames.pkl', 'rb')))
-feature_list = pickle.load(open('embeddings.pkl', 'rb'))
+filenames = np.array(pickle.load(open('models/filenames.pkl', 'rb')))
+feature_list = pickle.load(open('models/embeddings.pkl', 'rb'))
 
 model = ResNet50(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
 model.trainable = False
