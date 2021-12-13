@@ -61,7 +61,7 @@ def load_image(img):
         return 0
 
 def set_image(image_result):
-    st.image(image_result, width=300)
+    st.image(image_result, use_column_width=True)
 
 st.title('Fashion recommender system')
 
